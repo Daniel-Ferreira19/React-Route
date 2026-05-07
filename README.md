@@ -1,36 +1,35 @@
-# React Router — O que aprendi hoje
-Este projeto foi feito para praticar o uso do React Router no React.
+# 📌 Projeto React Router - Início dos Estudos
 
-# O que foi feito
-Aprendi a configurar rotas básicas dentro de uma aplicação React usando React Router.
+Este projeto foi criado com o objetivo de iniciar os estudos sobre rotas no React utilizando React Router.
+
+---
+
+## 🚀 Objetivo
+
+Entender como funciona a navegação entre páginas em uma aplicação React sem recarregar o navegador.
+
+---
+
+## 🧭 O que foi feito até agora
+
+- Instalação do React Router
+- Criação de duas páginas:
+  - Página Inicial (Inicio)
+  - Página Sobre Mim (SobreMim)
+- Configuração básica de rotas
+
+---
+
+## ⚙️ Estrutura inicial das rotas
+
+```jsx
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Inicio />} />
+    <Route path="/sobreMim" element={<SobreMim />} />
+    <Route path="*" element={<div>Página não encontrada</div>} />
+  </Routes>
+</BrowserRouter>
 
 
-# O que cada parte faz
-
-**BrowserRouter → ativa o sistema de rotas na aplicação**
-
-**Routes → organiza todas as rotas**
-
-**Route → define o caminho e o componente que será exibido**
-
-
-
-# Rotas criadas
-
-
- "/" → página inicial (Inicio)
-
-
-"/sobreMim" → página Sobre Mim
-
-
-"*" → página de erro (quando a rota não existe)
-
-
-
-# Aprendizados do dia
-
-*1* -Instalar e usar React Router
-*2*-Criar rotas simples
-*3*- Entender BrowserRouter, Routes e Route
-*4*- Criar rota padrão e rota de erro (*)
+ 
