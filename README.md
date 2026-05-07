@@ -1,18 +1,36 @@
-# React + Vite
+# React Router — O que aprendi hoje
+Este projeto foi feito para praticar o uso do React Router no React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# O que foi feito
+Aprendi a configurar rotas básicas dentro de uma aplicação React usando React Router.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# O que cada parte faz
 
-## React Compiler
+**BrowserRouter → ativa o sistema de rotas na aplicação**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+**Routes → organiza todas as rotas**
 
-Note: This will impact Vite dev & build performances.
+**Route → define o caminho e o componente que será exibido**
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# Rotas criadas
+
+
+ "/" → página inicial (Inicio)
+
+
+"/sobreMim" → página Sobre Mim
+
+
+"*" → página de erro (quando a rota não existe)
+
+
+
+# Aprendizados do dia
+
+*1* -Instalar e usar React Router
+*2*-Criar rotas simples
+*3*- Entender BrowserRouter, Routes e Route
+*4*- Criar rota padrão e rota de erro (*)
