@@ -1,18 +1,35 @@
-# React + Vite
+# 📌 Projeto React Router - Início dos Estudos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi criado com o objetivo de iniciar os estudos sobre rotas no React utilizando React Router.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Objetivo
 
-## React Compiler
+Entender como funciona a navegação entre páginas em uma aplicação React sem recarregar o navegador.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🧭 O que foi feito até agora
 
-## Expanding the ESLint configuration
+- Instalação do React Router
+- Criação de duas páginas:
+  - Página Inicial (Inicio)
+  - Página Sobre Mim (SobreMim)
+- Configuração básica de rotas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Estrutura inicial das rotas
+
+```jsx
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Inicio />} />
+    <Route path="/sobreMim" element={<SobreMim />} />
+    <Route path="*" element={<div>Página não encontrada</div>} />
+  </Routes>
+</BrowserRouter>
+
+
+ 
