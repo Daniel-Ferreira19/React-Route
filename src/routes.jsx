@@ -11,7 +11,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/sobremim" element={<SobreMim />} />
-        <Route path="*" element={<div>padina não encontrada</div>}/>
+        <Route path="*" element={<div>pagina não encontrada</div>}/>
       </Routes>
     </BrowserRouter>
 

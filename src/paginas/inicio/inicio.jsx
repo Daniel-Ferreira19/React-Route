@@ -1,6 +1,12 @@
+import Banner from "../Banner/Banner";
+
 function Inicio() {
   return (
-    <h1>seja Bem-Vindo</h1>
+    <main>
+      <Banner/>
+
+      <h1>seja Bem-Vindo</h1>
+    </main>
   )
   
 }
