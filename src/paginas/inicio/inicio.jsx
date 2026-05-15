@@ -1,7 +1,7 @@
 
 import style from "./inicio.module.css";
 import posts  from "../../assets/video-3.1/json/posts.json";
-import Post from "../Post/Post";
+import PostCard from "../PostCard/PostCard";
 
 function Inicio() {
   return (
@@ -9,7 +9,7 @@ function Inicio() {
       <ul className={style.posts }>
         {posts.map((post) => (
           <li key={post.id}>
-            <Post post={post}/>
+            <PostCard post={post}/>
           </li>
         ))}
       </ul>

@@ -5,20 +5,25 @@ import SobreMim from "./paginas/SobreMim/SobreMim";
 import Menu from "./paginas/Menu/Menu";
 import Rodape from "./paginas/Rodape/Rodape";
 import PaginaPadrao from "./paginas/PaginaPadrão/PaginaPadao";
+import Post from "./paginas/Post/Post";
+import NaoEncontrada from "./paginas/NaoEncontrada/NaoEncontrada";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Menu />
+
       <Routes>
 
         <Route path="/" element={<PaginaPadrao />} >
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
+          <Route path="post/:id" element={<Post/>}/>
         </Route>
-
-        <Route path="*" element={<div>pagina não encontrada</div>} />
+        
+        <Route path="*" element={<NaoEncontrada/>} />
       </Routes>
+
       <Rodape />
     </BrowserRouter>
 

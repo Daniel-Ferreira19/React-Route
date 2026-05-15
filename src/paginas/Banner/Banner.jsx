@@ -13,11 +13,7 @@ function Banner() {
                     </p>
                 </div>
                 <div className={style.imagens}>
-                    <img
-                        className={style.circuloColorido}
-                        src="/assets/circulo_colorido.png"
-                        aria-hidden={true}
-                    />
+                    
 
                     <img
                         className={style.minhaFoto}
