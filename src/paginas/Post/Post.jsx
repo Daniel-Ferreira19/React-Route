@@ -1,16 +1,32 @@
-import style from "./Post.module.css"
-function Post({post}) {
-    return(
- <div className={style.post}>
-<img
-    className={style.capa}
-    src={`/posts/${post.id}/capa.png`}
-    alt="imagens"
-/>
-<h2 className={style.titulo}>{post.titulo}</h2>
+import { useParams } from "react-router-dom"
+import posts  from "../../assets/video-3.1/json/posts.json";
+import PostModelo from "../PostModelo/PostModelo";
+import ReactMarkdown from "react-markdown"
+import "./Post.css"
+function Post() {
 
-<button className={style.botaoLer}>Ler</button>
- </div>
-    )
+   const parametros = useParams() 
+   
+        const post = posts.find((post) => {
+            return post.id === Number(parametros.id)
+        })
+
+if(!post) {
+    return <h1>post não encontrado </h1>
 }
-export default Post;
+
+    return (
+  <PostModelo 
+  fotoCapa={`/assets/post/${post.id}/capa.png`}
+  titulo={post.titulo}
+  >
+    <div className="post-markdown-container">
+    <ReactMarkdown>
+      {post.texto}
+     </ReactMarkdown>
+     </div>
+  </PostModelo>
+    )
+    
+}
+export default Post
