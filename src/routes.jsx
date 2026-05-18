@@ -7,20 +7,22 @@ import Rodape from "./paginas/Rodape/Rodape";
 import PaginaPadrao from "./paginas/PaginaPadrão/PaginaPadao";
 import Post from "./paginas/Post/Post";
 import NaoEncontrada from "./paginas/NaoEncontrada/NaoEncontrada";
+import ScrollToTop from "./paginas/Scrolltop/Scrolltop";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Menu />
 
       <Routes>
 
         <Route path="/" element={<PaginaPadrao />} >
           <Route index element={<Inicio />} />
-          <Route path="sobremim" element={<SobreMim />} />
-          <Route path="post/:id" element={<Post/>}/>
+          <Route path="sobremim" element={<SobreMim />} />  
         </Route>
         
+        <Route path="posts/:id" element={<Post />} />
         <Route path="*" element={<NaoEncontrada/>} />
       </Routes>
 

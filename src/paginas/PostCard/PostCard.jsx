@@ -3,7 +3,7 @@ import style from "./PostCard.module.css"
 import BotaoPrincipal from "../BotaoPrincipal/BotaoPrincipal";
 function PostCard({ post }) {
     return (
-        <Link to={`/post/${post.id}`}>
+        <Link to={`/posts/${post.id}`}>
             <div className={style.post}>
                 <img
                     className={style.capa}

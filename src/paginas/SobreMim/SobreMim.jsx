@@ -1,7 +1,7 @@
 import styles from "./SobreMim.module.css"
 import PostModelo from "../PostModelo/PostModelo";
 import fotoCapa from "/assets/sobre_mim_capa.png"
-import fotoSobreMim from "/assets/Daniel2.png"
+import fotoSobreMim from "/assets/Daniel.png"
 
 function SobreMim() {
   return(
