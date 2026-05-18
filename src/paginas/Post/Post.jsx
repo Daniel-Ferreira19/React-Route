@@ -3,6 +3,7 @@ import posts  from "../../assets/video-3.1/json/posts.json";
 import PostModelo from "../PostModelo/PostModelo";
 import ReactMarkdown from "react-markdown"
 import "./Post.css"
+
 function Post() {
 
    const parametros = useParams() 
