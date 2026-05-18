@@ -6,7 +6,7 @@ function Banner() {
             <div className={style.banner}>
                 <div className={style.apresentacao}>
                     <h1 className={style.titulo}>
-                        Ola a todos!
+                        Olá a todos!
                     </h1>
                     <p className={style.paragrafo}>
                         Sou um desenvolvedor dedicado, curioso e sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades. Gosto de criar projetos práticos, resolver problemas e entender como as aplicações funcionam na prática. Tenho interesse em desenvolvimento front-end, foco em evolução constante e valorizo responsabilidade, organização e trabalho em equipe.
